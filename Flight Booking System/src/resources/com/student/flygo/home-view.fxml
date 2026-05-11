@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.student.flygo.controller.HomeController" style="-fx-background-color: #F1F5F9;">
+    <fx:define>
+        <ToggleGroup fx:id="tripToggleGroup"/>
+    </fx:define>
+    <top>
+        <VBox spacing="10" prefHeight="258" style="-fx-background-color: #0F172A; -fx-background-radius: 0 0 34 34;">
+            <padding><Insets top="34" right="24" bottom="18" left="24"/></padding>
+            <HBox alignment="CENTER_LEFT" spacing="10">
+                <Label text="✈" style="-fx-background-color: white; -fx-background-radius: 18; -fx-padding: 8; -fx-text-fill: #0F172A;"/>
+                <VBox>
+                    <Label text="FlyGo" style="-fx-font-size: 18; -fx-font-weight: 900; -fx-text-fill: white;"/>
+                    <Label text="Book smarter" style="-fx-font-size: 10; -fx-text-fill: #CBD5E1;"/>
+                </VBox>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Button text="Logout" onAction="#backToLogin" style="-fx-background-color: #1E293B; -fx-text-fill: white; -fx-background-radius: 16;"/>
+            </HBox>
+            <Region prefHeight="12"/>
+            <Label fx:id="helloLabel" style="-fx-font-size: 12; -fx-text-fill: #CBD5E1;"/>
+            <Label text="Where are you" style="-fx-font-size: 30; -fx-font-weight: 900; -fx-text-fill: white;"/>
+            <Label text="flying next?" style="-fx-font-size: 30; -fx-font-weight: 900; -fx-text-fill: white;"/>
+            <HBox spacing="7">
+                <ToggleButton fx:id="roundTripButton" text="Round trip" toggleGroup="$tripToggleGroup" style="-fx-background-radius: 16;"/>
+                <ToggleButton fx:id="oneWayButton" text="One way" toggleGroup="$tripToggleGroup" style="-fx-background-radius: 16;"/>
+                <ToggleButton fx:id="multiCityButton" text="Multi-city" toggleGroup="$tripToggleGroup" style="-fx-background-radius: 16;"/>
+            </HBox>
+        </VBox>
+    </top>
+    <center>
+        <VBox alignment="TOP_CENTER">
+            <padding><Insets top="-8" right="24" bottom="24" left="24"/></padding>
+            <VBox spacing="12" maxWidth="345" style="-fx-background-color: white; -fx-background-radius: 28; -fx-padding: 18;">
+                <Label text="FROM" style="-fx-font-size: 10; -fx-text-fill: #94A3B8; -fx-font-weight: bold;"/>
+                <ComboBox fx:id="fromBox" maxWidth="Infinity" prefHeight="44"/>
+                <Label text="TO" style="-fx-font-size: 10; -fx-text-fill: #94A3B8; -fx-font-weight: bold;"/>
+                <ComboBox fx:id="toBox" maxWidth="Infinity" prefHeight="44"/>
+                <HBox spacing="10">
+                    <VBox HBox.hgrow="ALWAYS">
+                        <Label text="DEPART" style="-fx-font-size: 10; -fx-text-fill: #94A3B8; -fx-font-weight: bold;"/>
+                        <DatePicker fx:id="departDatePicker" maxWidth="Infinity" prefHeight="44"/>
+                    </VBox>
+                    <VBox HBox.hgrow="ALWAYS">
+                        <Label text="RETURN" style="-fx-font-size: 10; -fx-text-fill: #94A3B8; -fx-font-weight: bold;"/>
+                        <DatePicker fx:id="returnDatePicker" maxWidth="Infinity" prefHeight="44"/>
+                    </VBox>
+                </HBox>
+                <HBox spacing="10">
+                    <VBox HBox.hgrow="ALWAYS">
+                        <Label text="PASSENGERS" style="-fx-font-size: 10; -fx-text-fill: #94A3B8; -fx-font-weight: bold;"/>
+                        <Spinner fx:id="passengersSpinner" maxWidth="Infinity" prefHeight="44"/>
+                    </VBox>
+                    <VBox HBox.hgrow="ALWAYS">
+                        <Label text="BAGGAGE" style="-fx-font-size: 10; -fx-text-fill: #94A3B8; -fx-font-weight: bold;"/>
+                        <ComboBox fx:id="baggageBox" maxWidth="Infinity" prefHeight="44"/>
+                    </VBox>
+                </HBox>
+                <Button text="Search Flights" onAction="#searchFlights" maxWidth="Infinity" prefHeight="56" style="-fx-background-color: #4F46E5; -fx-text-fill: white; -fx-background-radius: 18; -fx-font-weight: bold;"/>
+            </VBox>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.student.flygo.controller.SummaryController" spacing="14" style="-fx-background-color: #F1F5F9;">
+    <padding><Insets top="42" right="24" bottom="20" left="24"/></padding>
+    <Label text="Trip summary" style="-fx-font-size: 27; -fx-font-weight: 900; -fx-text-fill: #020617;"/>
+    <Label text="Review your selected flight" style="-fx-font-size: 11; -fx-text-fill: #64748B;"/>
+    <VBox spacing="8" style="-fx-background-color: white; -fx-background-radius: 28; -fx-padding: 18;">
+        <Label fx:id="flightLabel" style="-fx-font-size: 18; -fx-font-weight: 900;"/>
+        <Label fx:id="routeLabel" style="-fx-font-size: 13; -fx-font-weight: bold;"/>
+        <Label fx:id="dateLabel" style="-fx-font-size: 12; -fx-text-fill: #64748B;"/>
+        <Label fx:id="tripTypeLabel" style="-fx-font-size: 12; -fx-text-fill: #64748B;"/>
+    </VBox>
+    <VBox spacing="8" style="-fx-background-color: white; -fx-background-radius: 28; -fx-padding: 18;">
+        <Label text="Passenger" style="-fx-font-size: 15; -fx-font-weight: bold;"/>
+        <Label fx:id="passengerLabel" style="-fx-font-size: 12; -fx-text-fill: #64748B;"/>
+        <Label fx:id="seatLabel" style="-fx-font-size: 12; -fx-text-fill: #64748B;"/>
+        <Label fx:id="baggageLabel" style="-fx-font-size: 12; -fx-text-fill: #64748B;"/>
+    </VBox>
+    <VBox spacing="8" style="-fx-background-color: white; -fx-background-radius: 28; -fx-padding: 18;">
+        <HBox><Label text="Base fare" style="-fx-text-fill: #64748B;"/><Region HBox.hgrow="ALWAYS"/><Label fx:id="baseFareLabel" style="-fx-font-weight: bold;"/></HBox>
+        <HBox><Label text="Taxes &amp; fees" style="-fx-text-fill: #64748B;"/><Region HBox.hgrow="ALWAYS"/><Label fx:id="taxesLabel" style="-fx-font-weight: bold;"/></HBox>
+        <HBox><Label text="Baggage" style="-fx-text-fill: #64748B;"/><Region HBox.hgrow="ALWAYS"/><Label fx:id="baggageFeeLabel" style="-fx-font-weight: bold;"/></HBox>
+        <Separator/>
+        <HBox><Label text="Total" style="-fx-font-weight: bold;"/><Region HBox.hgrow="ALWAYS"/><Label fx:id="totalLabel" style="-fx-font-size: 18; -fx-font-weight: 900;"/></HBox>
+    </VBox>
+    <Button text="Continue to Payment" onAction="#continueToPayment" maxWidth="Infinity" prefHeight="56" style="-fx-background-color: #0F172A; -fx-text-fill: white; -fx-background-radius: 18; -fx-font-weight: bold;"/>
+    <Button text="Back" onAction="#back" maxWidth="Infinity" prefHeight="42" style="-fx-background-color: #4F46E5; -fx-text-fill: white; -fx-background-radius: 16;"/>
+</VBox>

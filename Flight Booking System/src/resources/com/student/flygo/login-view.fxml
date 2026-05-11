@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.student.flygo.controller.LoginController" alignment="TOP_CENTER" spacing="16" style="-fx-background-color: #F1F5F9;">
+    <padding><Insets top="58" right="30" bottom="24" left="30"/></padding>
+    <Label text="✈" style="-fx-font-size: 52; -fx-text-fill: #0F172A;"/>
+    <Label text="Welcome back" style="-fx-font-size: 30; -fx-font-weight: 900; -fx-text-fill: #020617;"/>
+    <Label text="Login to continue booking your flight" style="-fx-font-size: 12; -fx-text-fill: #64748B;"/>
+    <Region prefHeight="16"/>
+    <TextField fx:id="emailField" prefHeight="54" style="-fx-background-color: white; -fx-background-radius: 16;"/>
+    <PasswordField fx:id="passwordField" prefHeight="54" style="-fx-background-color: white; -fx-background-radius: 16;"/>
+    <Hyperlink text="Forgot password?" style="-fx-text-fill: #4F46E5; -fx-font-weight: bold;"/>
+    <Button text="Login" onAction="#login" maxWidth="Infinity" prefHeight="56" style="-fx-background-color: #4F46E5; -fx-text-fill: white; -fx-background-radius: 18; -fx-font-weight: bold;"/>
+    <Button text="Continue with Google" maxWidth="Infinity" prefHeight="48" style="-fx-background-color: white; -fx-background-radius: 16; -fx-font-weight: bold;"/>
+    <Region prefHeight="60"/>
+    <Hyperlink text="Don't have an account? Sign up" onAction="#openSignUp"/>
+</VBox>
