@@ -1,7 +1,8 @@
-package service;
-import model.*;
+package Service;
 import java.time.LocalDateTime;
 import java.util.List;
+
+import Model.*;
 public class AdminService {
     private final PersistenceService persistenceService;
     public AdminService() {

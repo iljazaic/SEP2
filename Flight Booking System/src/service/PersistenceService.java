@@ -1,8 +1,9 @@
-package service;
-import model.*;
+package Service;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+
+import Model.*;
 public class PersistenceService {
     private static PersistenceService instance;
     private final List<User>        users        = new ArrayList<>();
