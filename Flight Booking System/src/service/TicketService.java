@@ -1,7 +1,8 @@
-package service;
-import model.*;
+package Service;
 import java.util.ArrayList;
 import java.util.List;
+
+import Model.*;
 public class TicketService {
     protected PersistenceService persistenceService;
     public TicketService() {
