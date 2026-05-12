@@ -2,7 +2,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
-<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.student.flygo.controller.HomeController" style="-fx-background-color: #F1F5F9;">
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.HomeController" style="-fx-background-color: #F1F5F9;">
     <fx:define>
         <ToggleGroup fx:id="tripToggleGroup"/>
     </fx:define>

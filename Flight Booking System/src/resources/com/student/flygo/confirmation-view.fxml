@@ -2,7 +2,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
-<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.student.flygo.controller.ConfirmationController" alignment="TOP_CENTER" spacing="17" style="-fx-background-color: #F1F5F9;">
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.ConfirmationController" alignment="TOP_CENTER" spacing="17" style="-fx-background-color: #F1F5F9;">
     <padding><Insets top="64" right="24" bottom="20" left="24"/></padding>
     <Label text="✓" style="-fx-background-color: #10B981; -fx-background-radius: 44; -fx-padding: 12 26 12 26; -fx-text-fill: white; -fx-font-size: 48; -fx-font-weight: bold;"/>
     <Label text="Booking Confirmed!" style="-fx-font-size: 29; -fx-font-weight: 900; -fx-text-fill: #020617;"/>

@@ -2,7 +2,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
-<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.student.flygo.controller.SignUpController" alignment="TOP_CENTER" spacing="14" style="-fx-background-color: #F1F5F9;">
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.SignUpController" alignment="TOP_CENTER" spacing="14" style="-fx-background-color: #F1F5F9;">
     <padding><Insets top="48" right="30" bottom="24" left="30"/></padding>
     <Label text="✈" style="-fx-font-size: 52; -fx-text-fill: #4F46E5;"/>
     <Label text="Create account" style="-fx-font-size: 30; -fx-font-weight: 900; -fx-text-fill: #020617;"/>
