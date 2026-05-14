@@ -1,8 +1,25 @@
 package Model.StateModel.FlightStates;
 
-public interface OnTime {
+import Model.Flight;
 
+public class OnTime implements FlightStateInterface{
 
-    
-    
+    @Override
+    public Flight OnFetchFlight(){
+        return null;
+    }
+
+    @Override
+    public int OnFetchDelay(){
+        return 0;
+    }
+
+    @Override
+    public void OnReceiveUpdate(){
+    }
+
+    @Override
+    public void OnPushNotification(){
+    }
+
 }

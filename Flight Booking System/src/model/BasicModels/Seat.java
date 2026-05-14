@@ -1,4 +1,4 @@
-package model;
+package Model;
 import java.io.Serializable;
 public class Seat implements Serializable {
     public static final String CLASS_ECONOMY  = "ECONOMY";

@@ -3,6 +3,11 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import Model.*;
+import Model.StateModel.BasicModels.Flight;
+import Model.StateModel.BasicModels.Reservation;
+import Model.StateModel.BasicModels.Seat;
+import Model.StateModel.BasicModels.Ticket;
+import Model.StateModel.BasicModels.User;
 public class AdminService {
     private final PersistenceService persistenceService;
     public AdminService() {

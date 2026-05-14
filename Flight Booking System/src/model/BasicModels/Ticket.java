@@ -1,4 +1,4 @@
-package model;
+package Model;
 import java.io.Serializable;
 public class Ticket implements Serializable {
     private int    id;
